@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    background-color: #F8F7FC;
+    color: #17152D;
+    font-family: "Poppins", sans-serif;
+}
+
+a,u{
+    text-decoration: none !important;
+    color: #17152D;
+}
+
+.dashboard_main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+.sidebar{
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 3px;
+    padding: 24px;
+    height: auto;
+    border-radius: 9px;
+    background-color: #21183B;
+    color: #F8F7FC;
+}
+
+.sidebar_brand{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sidebar_nav{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar_nav a{
+    background-color: #39276f;
+    color: #F8F7FC;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+.welcome_section p, h1{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.welcome_section{
+    background-color: #21183B;
+    color: #F8F7FC;
+    margin-top: 10px;
+    padding: 20px;
+    padding-left: 10px;
+    border-radius: 12px;
+}
+.overview{
+    background-color:  #21183B;
+    color: #F8F7FC;
+    border-radius: 12px;
+    margin: 0;
+    padding: 20px;
+    padding-left: 10px;
+
+}
+
+#progressbar {
+    background-color: #39276f;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+}
+
+#progressbar>div {
+  background-color: #7040ff;
+  width: 50%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
