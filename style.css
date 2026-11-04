@@ -68,14 +68,82 @@ a,u{
     padding-left: 10px;
     border-radius: 12px;
 }
-.overview{
-    background-color:  #21183B;
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .progress, .streak ,.active_habits{
+    flex: 1;
+    background-color: #21183B;
     color: #F8F7FC;
     border-radius: 12px;
-    margin: 0;
     padding: 20px;
-    padding-left: 10px;
-
+    }
 }
 
+.circular_progress {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #A78BFA 0deg 180deg,
+        #51476B 180deg 360deg
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress_value {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    background-color: #21183B;
+    color: #F8F7FC;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  flex-start;
+    gap: 50px;
+}
+
+.progress_info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.streak{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.active_habits{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.active_habits h1, p{
+    margin-left: 10px;
+}
 
